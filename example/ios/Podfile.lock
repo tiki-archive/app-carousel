@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - info_carousel (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - info_carousel (from `.symlinks/plugins/info_carousel/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  info_carousel:
+    :path: ".symlinks/plugins/info_carousel/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  info_carousel: 0dd2287149072a4e28acaf5923c25b1d5e5b6272
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.2
