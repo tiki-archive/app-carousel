@@ -1,3 +1,3 @@
 class InfoCarouselModel{
-
+  var cards = [];
 }
