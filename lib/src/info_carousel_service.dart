@@ -14,9 +14,10 @@ class InfoCarouselService extends ChangeNotifier {
   late final InfoCarouselController controller;
   late final InfoCarouselStyle style;
 
-  InfoCarouselService({required this.style}) {
+  InfoCarouselService({required this.style, required List<dynamic> cards}) {
     presenter = InfoCarouselPresenter(this);
     model = InfoCarouselModel();
     controller = InfoCarouselController(this);
+    model.cards = cards;
   }
 }

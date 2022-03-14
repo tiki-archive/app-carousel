@@ -10,8 +10,10 @@ class InfoCarousel {
 
   InfoCarousel({
     InfoCarouselStyle? style,
+    required List<dynamic> cards,
   }) : _service = InfoCarouselService(
-      style: style ?? InfoCarouselStyle()
+      style: style ?? InfoCarouselStyle(),
+      cards: cards
   );
 
   Widget home({bool example = false}) => _service.presenter.home();

@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:info_carousel/src/ui/info_carousel_layout.dart';
 import 'package:provider/provider.dart';
 
+import '../cards/info_carousel_card_service.dart';
 import '../info_carousel_service.dart';
 
 class InfoCarouselViewSlider extends StatelessWidget {
@@ -15,11 +15,10 @@ class InfoCarouselViewSlider extends StatelessWidget {
     return CarouselSlider(
         options: CarouselOptions(
             viewportFraction: 0.92, height: MediaQuery.of(context).size.height),
-        items: const [ InfoCarouselLayout()]);
-    //service.model.cards.map((card) {
-          //return Builder(
-              //builder: (BuildContext context) =>
-
-        //}).toList());
-  }
+        items: service.model.cards.map((card) {
+          return Builder(
+          builder: (BuildContext context) =>
+            InfoCarouselCardService(card: card, infoCarouselService: service).presenter.render());
+        }).toList());
+    }
 }
