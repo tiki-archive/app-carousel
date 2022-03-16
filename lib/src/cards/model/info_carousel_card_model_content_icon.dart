@@ -4,7 +4,7 @@
  */
 
 class InfoCarouselCardModelContentIcon{
-  String? image;
+  Image? image;
   String? text;
 
   InfoCarouselCardModelContentIcon({this.image, this.text});
