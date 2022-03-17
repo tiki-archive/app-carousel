@@ -23,11 +23,13 @@ class InfoCarouselCardViewCoverHeader extends StatelessWidget {
     return Row(mainAxisAlignment: MainAxisAlignment.start, children: [
       Expanded(
           child: Row(children: [
-        Image.asset("res/images/${model.image!}.png}",
-            package: "info_carousel",
-            width: service.controller
-                .calculateAnimation(service.infoCarouselService.style.size(6*3.75), _animationValue.value, 0)),
-        Padding(padding: EdgeInsets.only(right: service.infoCarouselService.style.size(2*3.75))),
+            SizedBox(
+              width: service.controller
+                .calculateAnimation(service.infoCarouselService.style.size(6*3.75),
+                  _animationValue.value, 0),
+              child: model.image!
+            ),
+            Padding(padding: EdgeInsets.only(right: service.infoCarouselService.style.size(2*3.75))),
         Text(
           model.title!,
           style: TextStyle(

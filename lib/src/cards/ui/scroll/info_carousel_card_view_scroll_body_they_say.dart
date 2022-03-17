@@ -33,7 +33,7 @@ class InfoCarouselCardViewScrollBodyTheySay extends StatelessWidget {
       theySay.add(Row(children: [
         Padding(
             padding: EdgeInsets.only(right: service.infoCarouselService.style.size(4*3.75)),
-            child: Image.asset('res/images/${theySayData[i].image!}.png', package: 'info_carousel', width: service.infoCarouselService.style.size(7*3.75))),
+            child: SizedBox(child: theySayData[i].image!, width: service.infoCarouselService.style.size(7*3.75))),
         Expanded(
           child: Text(theySayData[i].text!,
               style: TextStyle(

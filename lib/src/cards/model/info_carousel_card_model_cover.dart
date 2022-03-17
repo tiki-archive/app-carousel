@@ -3,10 +3,12 @@
  * MIT license. See LICENSE file in root directory.
  */
 
+import 'package:flutter/material.dart';
+
 import 'info_carousel_card_model_cover_header.dart';
 
 class InfoCarouselCardModelCover{
-  String? image;
+  Image? image;
   String? subtitle;
   String? bigTextLight;
   String? bigTextDark;

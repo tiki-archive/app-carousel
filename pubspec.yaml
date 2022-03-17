@@ -31,3 +31,5 @@ flutter:
         pluginClass: InfoCarouselPlugin
       ios:
         pluginClass: InfoCarouselPlugin
+  assets:
+    - res/images/

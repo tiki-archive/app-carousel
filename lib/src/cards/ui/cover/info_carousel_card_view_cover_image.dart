@@ -18,8 +18,7 @@ class InfoCarouselCardViewCoverImage extends StatelessWidget {
   Widget build(BuildContext context) {
     var service = Provider.of<InfoCarouselCardService>(context);
     var model = service.model.cover!.image!;
-    return Image.asset("res/images/$model.png",
-        package: 'info_carousel',
+    return SizedBox(child: model,
         width: service.controller.calculateAnimation(
             MediaQuery.of(context).size.width, _animationValue.value, service.infoCarouselService.style.size(18*8.12)));
   }

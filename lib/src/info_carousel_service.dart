@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:info_carousel/src/cards/model/info_carousel_card_model.dart';
 import 'package:info_carousel/src/info_carousel_style.dart';
 import 'package:logging/logging.dart';
 
@@ -14,7 +15,7 @@ class InfoCarouselService extends ChangeNotifier {
   late final InfoCarouselController controller;
   late final InfoCarouselStyle style;
 
-  InfoCarouselService({required this.style, required List<dynamic> cards}) {
+  InfoCarouselService({required this.style, required List<InfoCarouselCardModel> cards}) {
     presenter = InfoCarouselPresenter(this);
     model = InfoCarouselModel();
     controller = InfoCarouselController(this);

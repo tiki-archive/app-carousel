@@ -32,7 +32,7 @@ class InfoCarouselCardViewScrollBodyShouldKnow extends StatelessWidget {
       shouldKnow.add(Row(children: [
         Padding(
             padding: EdgeInsets.only(right: service.infoCarouselService.style.size(4*3.75)),
-            child: Image.asset('res/images/${shouldKnowData[i].image!}.png', package: 'info_carousel', width: service.infoCarouselService.style.size(7*3.75))),
+            child: SizedBox(child: shouldKnowData[i].image!, width: service.infoCarouselService.style.size(7*3.75))),
         Expanded(
           child: Text(shouldKnowData[i].text!,
               style: TextStyle(

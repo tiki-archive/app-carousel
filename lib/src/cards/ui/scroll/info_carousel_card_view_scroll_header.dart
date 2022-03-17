@@ -41,8 +41,7 @@ class InfoCarouselCardViewScrollHeader extends StatelessWidget {
                             fontSize: service.infoCarouselService.style.text(18),
                             fontWeight: FontWeight.bold))
                   ]))),
-      Image.asset('res/images/${model.image!}.png',
-          package: 'info_carousel',
+      SizedBox(child:model.image,
           width: service.controller.calculateAnimation(
               MediaQuery.of(context).size.width, _animationValue.value, service.infoCarouselService.style.size(18*8.12))),
     ]);

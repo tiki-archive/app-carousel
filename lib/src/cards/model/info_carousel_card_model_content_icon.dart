@@ -3,6 +3,8 @@
  * MIT license. See LICENSE file in root directory.
  */
 
+import 'package:flutter/material.dart';
+
 class InfoCarouselCardModelContentIcon{
   Image? image;
   String? text;
