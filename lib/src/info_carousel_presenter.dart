@@ -10,7 +10,7 @@ class InfoCarouselPresenter {
 
   InfoCarouselPresenter(this.service);
 
-  ChangeNotifierProvider<InfoCarouselService> home() {
+  ChangeNotifierProvider<InfoCarouselService> carouselWidget() {
     return ChangeNotifierProvider.value(
         value: service, child: const InfoCarouselScreen());
   }

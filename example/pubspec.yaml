@@ -30,13 +30,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_provider:
-    git:
-      url: https://github.com/tiki/google_provider
-      ref: 0.0.3
-  microsoft_provider:
-    git:
-      url: https://github.com/tiki/microsoft_provider
-      ref: 0.0.3
+    path: ../../google_provider
 
 dev_dependencies:
   flutter_test:

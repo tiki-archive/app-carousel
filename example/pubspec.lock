@@ -124,11 +124,9 @@ packages:
   google_provider:
     dependency: "direct main"
     description:
-      path: "."
-      ref: "0.0.3"
-      resolved-ref: ee2bc2dc6edccdcde720c83daf8b15aceaafd11a
-      url: "https://github.com/tiki/google_provider"
-    source: git
+      path: "../../google_provider"
+      relative: true
+    source: path
     version: "0.0.3"
   http:
     dependency: transitive
@@ -202,15 +200,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.7.0"
-  microsoft_provider:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: "0.0.3"
-      resolved-ref: "6a9bb41791bb700cebba2ebeae7cb535216c2e7e"
-      url: "https://github.com/tiki/microsoft_provider"
-    source: git
-    version: "0.0.3"
   mime:
     dependency: transitive
     description:

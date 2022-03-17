@@ -3,7 +3,8 @@
  * MIT license. See LICENSE file in root directory.
  */
 
-import 'package:flutter/material.dart';
+
+import 'dart:ui';
 
 class InfoCarouselCardModelCoverHeaderShare{
   String? message;

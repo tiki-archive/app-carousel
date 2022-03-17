@@ -5,9 +5,9 @@
 
 import 'dart:io';
 import 'dart:typed_data';
+import 'dart:ui' as ui;
 
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:share_plus/share_plus.dart';
@@ -31,10 +31,10 @@ class InfoCarouselCardService extends ChangeNotifier {
     }
   }
 
-  shareCard(String message, String image) async {
+  shareCard(String message, ui.Image image) async {
     bool permission = await HelperPermission.request(Permission.storage);
     if (permission) {
-      ByteData? bytes = await rootBundle.load("res/images/$image");
+      ByteData bytes = (await image.toByteData())!;
       var buffer = bytes.buffer;
       Uint8List pngBytes = buffer.asUint8List();
       Directory directory;
