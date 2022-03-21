@@ -3,10 +3,9 @@
  * MIT license. See LICENSE file in root directory.
  */
 
-
 import 'dart:ui';
 
-class InfoCarouselCardModelCoverHeaderShare{
+class InfoCarouselCardModelCoverHeaderShare {
   String? message;
   Image? image;
 

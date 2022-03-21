@@ -5,7 +5,7 @@
 
 import 'info_carousel_card_model_content_text.dart';
 
-class InfoCarouselCardModelContentCta{
+class InfoCarouselCardModelContentCta {
   List<InfoCarouselCardModelContentText>? explain;
   String? buttonText;
   String? buttonUrl;
@@ -15,7 +15,7 @@ class InfoCarouselCardModelContentCta{
 
   InfoCarouselCardModelContentCta.fromDynamic(dynamic data) {
     explain = [];
-    for(var explainData in data.explain){
+    for (var explainData in data.explain) {
       explain!.add(InfoCarouselCardModelContentText.fromDynamic(explainData));
     }
     buttonText = data.buttonText ?? '';

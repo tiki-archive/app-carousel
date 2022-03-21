@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 
 import 'info_carousel_card_model_cover_header.dart';
 
-class InfoCarouselCardModelCover{
+class InfoCarouselCardModelCover {
   Image? image;
   String? subtitle;
   String? bigTextLight;

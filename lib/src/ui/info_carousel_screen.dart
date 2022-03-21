@@ -3,7 +3,6 @@ import 'info_carousel_view_close.dart';
 import 'info_carousel_view_slider.dart';
 
 class InfoCarouselScreen extends StatelessWidget {
-
   const InfoCarouselScreen({Key? key}) : super(key: key);
 
   @override
@@ -16,7 +15,7 @@ class InfoCarouselScreen extends StatelessWidget {
             Padding(
                 padding: EdgeInsets.only(top: 8, bottom: 8),
                 child: InfoCarouselViewClose()),
-                Expanded(child: InfoCarouselViewSlider())
+            Expanded(child: InfoCarouselViewSlider())
           ])));
     }));
   }

@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 
 import 'info_carousel_card_model_cover_header_share.dart';
 
-class InfoCarouselCardModelCoverHeader{
+class InfoCarouselCardModelCoverHeader {
   Image? image;
   String? title;
   InfoCarouselCardModelCoverHeaderShare? share;

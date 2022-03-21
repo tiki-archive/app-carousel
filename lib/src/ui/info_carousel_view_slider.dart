@@ -6,7 +6,6 @@ import '../cards/info_carousel_card_service.dart';
 import '../info_carousel_service.dart';
 
 class InfoCarouselViewSlider extends StatelessWidget {
-
   const InfoCarouselViewSlider({Key? key}) : super(key: key);
 
   @override
@@ -17,8 +16,10 @@ class InfoCarouselViewSlider extends StatelessWidget {
             viewportFraction: 0.92, height: MediaQuery.of(context).size.height),
         items: service.model.cards.map((card) {
           return Builder(
-          builder: (BuildContext context) =>
-            InfoCarouselCardService(card: card, infoCarouselService: service).presenter.render());
+              builder: (BuildContext context) => InfoCarouselCardService(
+                      card: card, infoCarouselService: service)
+                  .presenter
+                  .render());
         }).toList());
-    }
+  }
 }

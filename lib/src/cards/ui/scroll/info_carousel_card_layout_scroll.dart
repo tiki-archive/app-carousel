@@ -4,7 +4,7 @@
  */
 
 import 'package:flutter/material.dart';
-import 'package:info_carousel/src/cards/info_carousel_card_controller.dart';
+import '../../info_carousel_card_controller.dart';
 import 'package:provider/provider.dart';
 
 

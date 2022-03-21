@@ -23,7 +23,8 @@ class InfoCarouselCardService extends ChangeNotifier {
   late final InfoCarouselCardController controller;
   late final InfoCarouselService infoCarouselService;
 
-  InfoCarouselCardService({required dynamic card, required this.infoCarouselService}) {
+  InfoCarouselCardService(
+      {required dynamic card, required this.infoCarouselService}) {
     presenter = InfoCarouselCardPresenter(this);
     controller = InfoCarouselCardController(this);
     if (card != null) {
