@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class InfoCarouselUtilsStyle{
+class InfoCarouselUtilsStyle {
   static const double _stdDeviceWidth = 375;
 
   final double _deviceWidth;
