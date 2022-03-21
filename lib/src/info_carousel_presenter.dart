@@ -1,6 +1,4 @@
-
-
-import 'package:info_carousel/src/ui/info_carousel_screen.dart';
+import 'ui/info_carousel_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'info_carousel_service.dart';

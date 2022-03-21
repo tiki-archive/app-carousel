@@ -5,7 +5,7 @@
 
 import 'package:flutter/material.dart';
 
-class InfoCarouselCardModelContentIcon{
+class InfoCarouselCardModelContentIcon {
   Image? image;
   String? text;
 

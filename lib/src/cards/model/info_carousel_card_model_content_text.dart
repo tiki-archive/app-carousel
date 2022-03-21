@@ -3,7 +3,7 @@
  * MIT license. See LICENSE file in root directory.
  */
 
-class InfoCarouselCardModelContentText{
+class InfoCarouselCardModelContentText {
   String? text;
   String? url;
 

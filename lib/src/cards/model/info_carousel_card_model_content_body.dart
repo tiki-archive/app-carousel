@@ -6,7 +6,7 @@
 import 'info_carousel_card_model_content_icon.dart';
 import 'info_carousel_card_model_content_text.dart';
 
-class InfoCarouselCardModelContentBody{
+class InfoCarouselCardModelContentBody {
   List<InfoCarouselCardModelContentText>? explain = [];
   List<InfoCarouselCardModelContentIcon>? theySay = [];
   List<InfoCarouselCardModelContentIcon>? shouldKnow = [];
@@ -18,15 +18,15 @@ class InfoCarouselCardModelContentBody{
     explain = [];
     theySay = [];
     shouldKnow = [];
-    for(var explainData in data.explain) {
+    for (var explainData in data.explain) {
       explain!.add(InfoCarouselCardModelContentText.fromDynamic(explainData));
     }
-    for(var theySayData in data.theySay){
+    for (var theySayData in data.theySay) {
       theySay!.add(InfoCarouselCardModelContentIcon.fromDynamic(theySayData));
     }
-    for(var shouldKnowData in data.shouldKnow) {
-      shouldKnow!.add(
-          InfoCarouselCardModelContentIcon.fromDynamic(shouldKnowData));
+    for (var shouldKnowData in data.shouldKnow) {
+      shouldKnow!
+          .add(InfoCarouselCardModelContentIcon.fromDynamic(shouldKnowData));
     }
   }
 }

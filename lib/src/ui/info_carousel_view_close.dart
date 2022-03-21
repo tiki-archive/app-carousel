@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:info_carousel/src/info_carousel_service.dart';
+import '../info_carousel_service.dart';
 import 'package:provider/provider.dart';
 
 class InfoCarouselViewClose extends StatelessWidget {
-
   const InfoCarouselViewClose({Key? key}) : super(key: key);
 
   @override
@@ -20,7 +19,8 @@ class InfoCarouselViewClose extends StatelessWidget {
           Padding(
               padding: EdgeInsets.only(left: service.style.size(1.5)),
               child: Icon(Icons.close,
-                  size: service.style.text(22), color: const Color(0xFF27002E))),
+                  size: service.style.text(22),
+                  color: const Color(0xFF27002E))),
         ]),
         onTap: () => Navigator.of(context).pop());
   }

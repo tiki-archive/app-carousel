@@ -6,7 +6,7 @@
 import 'info_carousel_card_model_content_body.dart';
 import 'info_carousel_card_model_content_cta.dart';
 
-class InfoCarouselCardModelContent{
+class InfoCarouselCardModelContent {
   InfoCarouselCardModelContentBody? body;
   InfoCarouselCardModelContentCta? cta;
 
