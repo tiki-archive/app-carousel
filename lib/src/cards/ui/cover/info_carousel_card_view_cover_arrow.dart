@@ -5,6 +5,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:style/style.dart';
 
 import '../../info_carousel_card_controller.dart';
 import '../../info_carousel_card_service.dart';
@@ -28,10 +29,8 @@ class InfoCarouselCardViewCoverArrow extends StatelessWidget {
             opacity: _animationValue.value * 2 <= 1
                 ? 1 - (_animationValue.value * 2)
                 : 0,
-            child: Image.asset(
-              "res/images/arrow-up.png",
-              width: service.infoCarouselService.style.size(14.5*3.75),
-              package: 'info_carousel',
+            child: Icon(IconProvider.keyboard_arrow_up,
+              size: service.infoCarouselService.style.size(14.5*3.75),
             )));
   }
 }
