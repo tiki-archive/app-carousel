@@ -1,6 +1,6 @@
 name: info_carousel
 description: A new Flutter project.
-version: 0.0.3
+version: 0.0.4
 repository: https://github.com/tiki/info_carousel
 publish_to: none  # this package is in active development.
 
