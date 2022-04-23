@@ -15,7 +15,9 @@ class InfoCarouselCardViewCoverArrow extends StatelessWidget {
   final Animation _animationController;
 
   const InfoCarouselCardViewCoverArrow(
-      this._animationController, this._animationValue, {Key? key}) : super(key: key);
+      this._animationController, this._animationValue,
+      {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +31,9 @@ class InfoCarouselCardViewCoverArrow extends StatelessWidget {
             opacity: _animationValue.value * 2 <= 1
                 ? 1 - (_animationValue.value * 2)
                 : 0,
-            child: Icon(IconProvider.keyboard_arrow_up,
-              size: service.infoCarouselService.style.size(14.5*3.75),
+            child: Icon(
+              IconProvider.arrow_wide_up,
+              size: service.infoCarouselService.style.size(14.5 * 3.75),
             )));
   }
 }
