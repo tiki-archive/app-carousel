@@ -5,13 +5,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:tiki_style/tiki_style.dart';
 
 import '../../info_carousel_card_service.dart';
 
 class InfoCarouselCardViewCoverBigText extends StatelessWidget {
   final Animation<double> _animationValue;
 
-  const InfoCarouselCardViewCoverBigText(this._animationValue, {Key? key}) : super(key: key);
+  const InfoCarouselCardViewCoverBigText(this._animationValue, {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,10 +23,12 @@ class InfoCarouselCardViewCoverBigText extends StatelessWidget {
         textAlign: TextAlign.left,
         text: TextSpan(
             style: TextStyle(
-                color:  const Color(0xFF0036B5),
+                color: const Color(0xFF0036B5),
                 fontFamily: "Koara",
-                fontSize: service.controller
-                    .calculateAnimation(service.infoCarouselService.style.text(32), _animationValue.value, service.infoCarouselService.style.text(0)),
+                fontSize: service.controller.calculateAnimation(
+                    SizeProvider.instance.text(32),
+                    _animationValue.value,
+                    SizeProvider.instance.text(0)),
                 fontWeight: FontWeight.bold),
             text: model.bigTextLight!,
             children: [
@@ -34,7 +38,9 @@ class InfoCarouselCardViewCoverBigText extends StatelessWidget {
                       color: const Color(0xFF00133F),
                       fontFamily: "Koara",
                       fontSize: service.controller.calculateAnimation(
-                          service.infoCarouselService.style.text(32), _animationValue.value, service.infoCarouselService.style.text(0)),
+                          SizeProvider.instance.text(32),
+                          _animationValue.value,
+                          SizeProvider.instance.text(0)),
                       fontWeight: FontWeight.bold))
             ]));
   }

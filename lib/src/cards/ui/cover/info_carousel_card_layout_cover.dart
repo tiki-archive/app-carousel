@@ -5,7 +5,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
+import 'package:tiki_style/tiki_style.dart';
 
 import '../../info_carousel_card_service.dart';
 import 'info_carousel_card_view_cover_arrow.dart';
@@ -19,7 +19,10 @@ class InfoCarouselCardLayoutCover extends StatelessWidget {
   final Animation<double> _animationValue;
   final AnimationController _animationController;
 
-  const InfoCarouselCardLayoutCover(this._animationValue, this._animationController, {Key? key}) : super(key: key);
+  const InfoCarouselCardLayoutCover(
+      this._animationValue, this._animationController,
+      {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,26 +36,32 @@ class InfoCarouselCardLayoutCover extends StatelessWidget {
             .onVerticalDragEndCover(endDetails, _animationController),
         child: Container(
             color: Colors.white,
-            padding: EdgeInsets.only(left: service.infoCarouselService.style.size(4*3.75), top: service.infoCarouselService.style.size(1*8.12), right: service.infoCarouselService.style.size(4*3.75)),
+            padding: EdgeInsets.only(
+                left: SizeProvider.instance.size(4 * 3.75),
+                top: SizeProvider.instance.size(1 * 8.12),
+                right: SizeProvider.instance.size(4 * 3.75)),
             child: Column(
               children: [
-            InfoCarouselCardViewCoverHeader(_animationValue),
-            InfoCarouselCardViewCoverImage(_animationValue),
-            Align(
-                alignment: Alignment.topLeft,
-                child: InfoCarouselCardViewCoverSubtitle(_animationValue)),
-            Container(
-                padding: EdgeInsets.only(top: service.infoCarouselService.style.size(1.25*8.12)),
-                child: InfoCarouselCardViewCoverBigText(_animationValue)),
-            Container(
-                padding: EdgeInsets.only(top: service.infoCarouselService.style.size(1.25*8.12)),
-                child: InfoCarouselCardViewCoverText(_animationValue)),
-            Expanded(
-                child: Container(
-                    alignment: Alignment.bottomCenter,
-                    padding: EdgeInsets.only(bottom: service.infoCarouselService.style.size(4*8.12)),
-                    child: InfoCarouselCardViewCoverArrow(
-                        _animationController, _animationValue)))
+                InfoCarouselCardViewCoverHeader(_animationValue),
+                InfoCarouselCardViewCoverImage(_animationValue),
+                Align(
+                    alignment: Alignment.topLeft,
+                    child: InfoCarouselCardViewCoverSubtitle(_animationValue)),
+                Container(
+                    padding: EdgeInsets.only(
+                        top: SizeProvider.instance.size(1.25 * 8.12)),
+                    child: InfoCarouselCardViewCoverBigText(_animationValue)),
+                Container(
+                    padding: EdgeInsets.only(
+                        top: SizeProvider.instance.size(1.25 * 8.12)),
+                    child: InfoCarouselCardViewCoverText(_animationValue)),
+                Expanded(
+                    child: Container(
+                        alignment: Alignment.bottomCenter,
+                        padding: EdgeInsets.only(
+                            bottom: SizeProvider.instance.size(4 * 8.12)),
+                        child: InfoCarouselCardViewCoverArrow(
+                            _animationController, _animationValue)))
               ],
             )));
   }

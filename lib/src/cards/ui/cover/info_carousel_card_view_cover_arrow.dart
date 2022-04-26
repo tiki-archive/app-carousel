@@ -5,7 +5,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:style/style.dart';
+import 'package:tiki_style/tiki_style.dart';
 
 import '../../info_carousel_card_controller.dart';
 import '../../info_carousel_card_service.dart';
@@ -33,7 +33,7 @@ class InfoCarouselCardViewCoverArrow extends StatelessWidget {
                 : 0,
             child: Icon(
               IconProvider.arrow_wide_up,
-              size: service.infoCarouselService.style.size(14.5 * 3.75),
+              size: SizeProvider.instance.size(14.5 * 3.75),
             )));
   }
 }
