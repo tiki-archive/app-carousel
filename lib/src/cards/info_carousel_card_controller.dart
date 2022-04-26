@@ -73,7 +73,9 @@ class InfoCarouselCardController {
   }
 
   openUrl(String? href) async {
-    if (href != null && await canLaunch(href)) await launch(href);
+    if (href != null && await canLaunchUrl(Uri.parse(href))) {
+      await launchUrl(Uri.parse(href));
+    }
   }
 
   tapArrowSlideUp(animationController) {

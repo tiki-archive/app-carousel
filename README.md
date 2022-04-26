@@ -1,15 +1,14 @@
-# info_carousel
+# Info Carousel
+Info Carousel widget screen for TIKI app.
 
-A new Flutter project.
+## How to Use
+1. Initialize the `TikiStyle` object.
+2. Build the `InfoCarousel` object passing the cards to be shown.
+3. Call the `carouselWidget()` method to show the widget. 
 
-## Getting Started
+## How to contribute
+Thank you for contributing with the data revolution!    
+All the information about contribution can be found in [CONTRIBUTING](https://github.com/tiki/app/CONTRIBUTING.md)
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+## License
+MIT license

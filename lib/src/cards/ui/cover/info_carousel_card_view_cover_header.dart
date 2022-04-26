@@ -5,16 +5,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-
-
+import 'package:tiki_style/tiki_style.dart';
 
 import '../../info_carousel_card_service.dart';
 
 class InfoCarouselCardViewCoverHeader extends StatelessWidget {
   final Animation<double> _animationValue;
 
-  const InfoCarouselCardViewCoverHeader(this._animationValue, {Key? key}) : super(key: key);
+  const InfoCarouselCardViewCoverHeader(this._animationValue, {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,19 +22,20 @@ class InfoCarouselCardViewCoverHeader extends StatelessWidget {
     return Row(mainAxisAlignment: MainAxisAlignment.start, children: [
       Expanded(
           child: Row(children: [
-            SizedBox(
-              width: service.controller
-                .calculateAnimation(service.infoCarouselService.style.size(6*3.75),
-                  _animationValue.value, 0),
-              child: model.image!
-            ),
-            Padding(padding: EdgeInsets.only(right: service.infoCarouselService.style.size(2*3.75))),
+        SizedBox(
+            width: service.controller.calculateAnimation(
+                SizeProvider.instance.size(6 * 3.75), _animationValue.value, 0),
+            child: model.image!),
+        Padding(
+            padding:
+                EdgeInsets.only(right: SizeProvider.instance.size(2 * 3.75))),
         Text(
           model.title!,
           style: TextStyle(
-              fontFamily: "NunitoSans",
-              fontSize: service.controller
-                  .calculateAnimation(service.infoCarouselService.style.text(12), _animationValue.value, 0),
+              fontFamily: TextProvider.familyNunitoSans,
+              package: 'tiki_style',
+              fontSize: service.controller.calculateAnimation(
+                  SizeProvider.instance.text(12), _animationValue.value, 0),
               fontWeight: FontWeight.bold,
               color: const Color(0xFF00133F)),
         )
@@ -47,8 +47,10 @@ class InfoCarouselCardViewCoverHeader extends StatelessWidget {
                   context, model.share!.message!, model.share!.image!),
               child: Icon(Icons.share,
                   color: const Color(0xFFFF521C),
-                  size: service.controller
-                      .calculateAnimation(service.infoCarouselService.style.text(36), _animationValue.value, 0)))
+                  size: service.controller.calculateAnimation(
+                      SizeProvider.instance.text(36),
+                      _animationValue.value,
+                      0)))
     ]);
   }
 }

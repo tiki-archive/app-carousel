@@ -1,3 +1,8 @@
+## 0.0.4
+
+* TikiStyle migration
+* Publish to pub
+
 ## 0.0.3
 
 * Update package dependecies.

@@ -5,16 +5,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-
-
+import 'package:tiki_style/tiki_style.dart';
 
 import '../../info_carousel_card_service.dart';
 
 class InfoCarouselCardViewScrollHeader extends StatelessWidget {
   final Animation<double> _animationValue;
 
-  const InfoCarouselCardViewScrollHeader(this._animationValue, {Key? key}) : super(key: key);
+  const InfoCarouselCardViewScrollHeader(this._animationValue, {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,14 +21,14 @@ class InfoCarouselCardViewScrollHeader extends StatelessWidget {
     var model = service.model.cover!;
     return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
       SizedBox(
-          width: service.infoCarouselService.style.size(42*3.75),
+          width: SizeProvider.instance.size(42 * 3.75),
           child: RichText(
               textAlign: TextAlign.left,
               text: TextSpan(
                   style: TextStyle(
-                      color:  const Color(0xFF0036B5),
+                      color: const Color(0xFF0036B5),
                       fontFamily: "Koara",
-                      fontSize: service.infoCarouselService.style.text(18),
+                      fontSize: SizeProvider.instance.text(18),
                       fontWeight: FontWeight.bold),
                   text: model.bigTextLight!,
                   children: [
@@ -38,12 +37,15 @@ class InfoCarouselCardViewScrollHeader extends StatelessWidget {
                         style: TextStyle(
                             color: const Color(0xFF00133F),
                             fontFamily: "Koara",
-                            fontSize: service.infoCarouselService.style.text(18),
+                            fontSize: SizeProvider.instance.text(18),
                             fontWeight: FontWeight.bold))
                   ]))),
-      SizedBox(child:model.image,
+      SizedBox(
+          child: model.image,
           width: service.controller.calculateAnimation(
-              MediaQuery.of(context).size.width, _animationValue.value, service.infoCarouselService.style.size(18*8.12))),
+              MediaQuery.of(context).size.width,
+              _animationValue.value,
+              SizeProvider.instance.size(18 * 8.12))),
     ]);
   }
 }
