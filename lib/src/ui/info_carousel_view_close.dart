@@ -1,25 +1,24 @@
 import 'package:flutter/material.dart';
-import '../info_carousel_service.dart';
-import 'package:provider/provider.dart';
+import 'package:tiki_style/tiki_style.dart';
 
 class InfoCarouselViewClose extends StatelessWidget {
   const InfoCarouselViewClose({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    InfoCarouselService service = Provider.of<InfoCarouselService>(context);
     return GestureDetector(
         child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
           Text('CLOSE',
               style: TextStyle(
-                  fontSize: service.style.text(15),
+                  fontSize: SizeProvider.instance.text(15),
                   color: const Color(0xFF27002E),
-                  fontFamily: "NunitoSans",
+                  fontFamily: TextProvider.familyNunitoSans,
+                  package: 'tiki_style',
                   fontWeight: FontWeight.w800)),
           Padding(
-              padding: EdgeInsets.only(left: service.style.size(1.5)),
+              padding: EdgeInsets.only(left: SizeProvider.instance.size(1.5)),
               child: Icon(Icons.close,
-                  size: service.style.text(22),
+                  size: SizeProvider.instance.text(22),
                   color: const Color(0xFF27002E))),
         ]),
         onTap: () => Navigator.of(context).pop());

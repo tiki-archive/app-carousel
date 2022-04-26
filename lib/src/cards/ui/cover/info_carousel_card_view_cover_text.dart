@@ -5,15 +5,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-
+import 'package:tiki_style/tiki_style.dart';
 
 import '../../info_carousel_card_service.dart';
 
 class InfoCarouselCardViewCoverText extends StatelessWidget {
   final Animation<double> _animationValue;
 
-  const InfoCarouselCardViewCoverText(this._animationValue, {Key? key}) : super(key: key);
+  const InfoCarouselCardViewCoverText(this._animationValue, {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,8 +25,9 @@ class InfoCarouselCardViewCoverText extends StatelessWidget {
         child: Text(service.model.cover!.text!,
             style: TextStyle(
                 color: const Color(0xFF00133F),
-                fontFamily: "NunitoSans",
-                fontSize: service.infoCarouselService.style.text(12),
+                fontFamily: TextProvider.familyNunitoSans,
+                package: 'tiki_style',
+                fontSize: SizeProvider.instance.text(12),
                 fontWeight: FontWeight.w600)));
   }
 }

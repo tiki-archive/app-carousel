@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'src/cards/model/info_carousel_card_model.dart';
 
 import 'src/info_carousel_service.dart';
-import 'src/info_carousel_style.dart';
 
 export 'src/cards/model/info_carousel_card_model.dart';
 export 'src/cards/model/info_carousel_card_model.dart';
@@ -21,10 +20,8 @@ class InfoCarousel {
   dynamic apiAuthService;
 
   InfoCarousel({
-    InfoCarouselStyle? style,
     required List<InfoCarouselCardModel> cards,
-  }) : _service = InfoCarouselService(
-            style: style ?? InfoCarouselStyle(), cards: cards);
+  }) : _service = InfoCarouselService(cards: cards);
 
   Widget carouselWidget() => _service.presenter.carouselWidget();
 }
