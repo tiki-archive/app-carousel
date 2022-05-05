@@ -11,8 +11,8 @@ import 'package:tiki_style/tiki_style.dart';
 import '../../model/content_text.dart';
 import '../../service.dart';
 
-class InfoCarouselCardViewScrollCtaExplain extends StatelessWidget {
-  const InfoCarouselCardViewScrollCtaExplain({Key? key}) : super(key: key);
+class InfoCarouselCardUiScrollCtaExplain extends StatelessWidget {
+  const InfoCarouselCardUiScrollCtaExplain({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

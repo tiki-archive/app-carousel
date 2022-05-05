@@ -9,10 +9,10 @@ import 'package:tiki_style/tiki_style.dart';
 
 import '../../service.dart';
 
-class InfoCarouselCardViewScrollHeader extends StatelessWidget {
+class InfoCarouselCardUiScrollHeader extends StatelessWidget {
   final Animation<double> _animationValue;
 
-  const InfoCarouselCardViewScrollHeader(this._animationValue, {Key? key})
+  const InfoCarouselCardUiScrollHeader(this._animationValue, {Key? key})
       : super(key: key);
 
   @override

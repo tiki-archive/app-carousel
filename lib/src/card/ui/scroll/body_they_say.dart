@@ -10,8 +10,8 @@ import 'package:tiki_style/tiki_style.dart';
 import '../../model/content_icon.dart';
 import '../../service.dart';
 
-class InfoCarouselCardViewScrollBodyTheySay extends StatelessWidget {
-  const InfoCarouselCardViewScrollBodyTheySay({Key? key}) : super(key: key);
+class InfoCarouselCardUiScrollBodyTheySay extends StatelessWidget {
+  const InfoCarouselCardUiScrollBodyTheySay({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

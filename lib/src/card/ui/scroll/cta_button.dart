@@ -8,8 +8,8 @@ import 'package:provider/provider.dart';
 import 'package:tiki_style/tiki_style.dart';
 import '../../service.dart';
 
-class InfoCarouselCardViewScrollCtaButton extends StatelessWidget {
-  const InfoCarouselCardViewScrollCtaButton({Key? key}) : super(key: key);
+class InfoCarouselCardUiScrollCtaButton extends StatelessWidget {
+  const InfoCarouselCardUiScrollCtaButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -5,8 +5,8 @@
 import 'package:flutter/material.dart';
 import 'package:tiki_style/tiki_style.dart';
 
-class InfoCarouselCardViewScrollCtaHeading extends StatelessWidget {
-  const InfoCarouselCardViewScrollCtaHeading({Key? key}) : super(key: key);
+class InfoCarouselCardUiScrollCtaHeading extends StatelessWidget {
+  const InfoCarouselCardUiScrollCtaHeading({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

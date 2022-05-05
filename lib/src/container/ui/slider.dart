@@ -5,8 +5,8 @@ import 'package:provider/provider.dart';
 import '../../card/service.dart';
 import '../service.dart';
 
-class InfoCarouselViewSlider extends StatelessWidget {
-  const InfoCarouselViewSlider({Key? key}) : super(key: key);
+class InfoCarouselUiSlider extends StatelessWidget {
+  const InfoCarouselUiSlider({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

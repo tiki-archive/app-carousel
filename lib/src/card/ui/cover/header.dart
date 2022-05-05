@@ -9,10 +9,10 @@ import 'package:tiki_style/tiki_style.dart';
 
 import '../../service.dart';
 
-class InfoCarouselCardViewCoverHeader extends StatelessWidget {
+class InfoCarouselCardUiCoverHeader extends StatelessWidget {
   final Animation<double> _animationValue;
 
-  const InfoCarouselCardViewCoverHeader(this._animationValue, {Key? key})
+  const InfoCarouselCardUiCoverHeader(this._animationValue, {Key? key})
       : super(key: key);
 
   @override

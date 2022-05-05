@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'close.dart';
 import 'slider.dart';
 
-class InfoCarouselScreen extends StatelessWidget {
-  const InfoCarouselScreen({Key? key}) : super(key: key);
+class InfoCarouselUiScreen extends StatelessWidget {
+  const InfoCarouselUiScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +14,8 @@ class InfoCarouselScreen extends StatelessWidget {
               child: Column(children: const [
             Padding(
                 padding: EdgeInsets.only(top: 8, bottom: 8),
-                child: InfoCarouselViewClose()),
-            Expanded(child: InfoCarouselViewSlider())
+                child: InfoCarouselUiClose()),
+            Expanded(child: InfoCarouselUiSlider())
           ])));
     }));
   }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tiki_style/tiki_style.dart';
 
-class InfoCarouselViewClose extends StatelessWidget {
-  const InfoCarouselViewClose({Key? key}) : super(key: key);
+class InfoCarouselUiClose extends StatelessWidget {
+  const InfoCarouselUiClose({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
