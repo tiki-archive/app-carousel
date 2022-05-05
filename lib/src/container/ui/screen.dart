@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'info_carousel_view_close.dart';
-import 'info_carousel_view_slider.dart';
+import 'close.dart';
+import 'slider.dart';
 
 class InfoCarouselScreen extends StatelessWidget {
   const InfoCarouselScreen({Key? key}) : super(key: key);

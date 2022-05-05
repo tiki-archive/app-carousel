@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'src/cards/model/model.dart';
+import 'src/card/model/model.dart';
 
-import 'src/info_carousel_service.dart';
+import 'src/container/service.dart';
 
-export 'src/cards/model/model.dart';
-export 'src/cards/model/content.dart';
-export 'src/cards/model/content_body.dart';
-export 'src/cards/model/content_cta.dart';
-export 'src/cards/model/content_icon.dart';
-export 'src/cards/model/content_text.dart';
-export 'src/cards/model/cover.dart';
-export 'src/cards/model/cover_header.dart';
-export 'src/cards/model/cover_header_share.dart';
+export 'src/card/model/model.dart';
+export 'src/card/model/content.dart';
+export 'src/card/model/content_body.dart';
+export 'src/card/model/content_cta.dart';
+export 'src/card/model/content_icon.dart';
+export 'src/card/model/content_text.dart';
+export 'src/card/model/cover.dart';
+export 'src/card/model/cover_header.dart';
+export 'src/card/model/cover_header_share.dart';
 
 class InfoCarousel {
   late final InfoCarouselService _service;

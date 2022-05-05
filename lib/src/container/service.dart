@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'cards/model/info_carousel_card_model.dart';
-
-import 'info_carousel_controller.dart';
-import 'info_carousel_presenter.dart';
-import 'info_carousel_model.dart';
+import '../../info_carousel.dart';
+import 'controller.dart';
+import 'model.dart';
+import 'presenter.dart';
 
 class InfoCarouselService extends ChangeNotifier {
   late final InfoCarouselPresenter presenter;

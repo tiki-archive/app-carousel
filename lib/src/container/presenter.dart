@@ -1,7 +1,7 @@
-import 'ui/info_carousel_screen.dart';
+import 'service.dart';
 import 'package:provider/provider.dart';
 
-import 'info_carousel_service.dart';
+import 'ui/screen.dart';
 
 class InfoCarouselPresenter {
   final InfoCarouselService service;

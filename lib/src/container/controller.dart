@@ -1,4 +1,4 @@
-import 'info_carousel_service.dart';
+import 'service.dart';
 
 class InfoCarouselController {
   final InfoCarouselService service;
