@@ -33,7 +33,7 @@ class InfoCarouselCardUiScrollBodyTheySay extends StatelessWidget {
             padding:
                 EdgeInsets.only(right: SizeProvider.instance.size(4 * 3.75)),
             child: SizedBox(
-                child: theySayData[i].image!,
+                child: Icon(theySayData[i].icon, color: ColorProvider.white),
                 width: SizeProvider.instance.size(7 * 3.75))),
         Expanded(
           child: Text(theySayData[i].text!,

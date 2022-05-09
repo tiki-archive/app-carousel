@@ -20,14 +20,14 @@ class InfoCarouselCardModelContentBody {
     theySay = [];
     shouldKnow = [];
     for (var explainData in data.explain) {
-      explain!.add(InfoCarouselCardModelContentText.fromDynamic(explainData));
+      explain!.add(InfoCarouselCardModelContentText(text: explainData.text, url: explainData.url));
     }
     for (var theySayData in data.theySay) {
-      theySay!.add(InfoCarouselCardModelContentIcon.fromDynamic(theySayData));
+      theySay!.add(InfoCarouselCardModelContentIcon(text: theySayData.text, icon: theySayData.icon));
     }
     for (var shouldKnowData in data.shouldKnow) {
       shouldKnow!
-          .add(InfoCarouselCardModelContentIcon.fromDynamic(shouldKnowData));
+          .add(InfoCarouselCardModelContentIcon(text: shouldKnowData.text, icon: shouldKnowData.icon));
     }
   }
 }
