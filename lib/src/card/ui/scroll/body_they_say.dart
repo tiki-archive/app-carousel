@@ -9,6 +9,7 @@ import 'package:tiki_style/tiki_style.dart';
 
 import '../../model/content_icon.dart';
 import '../../service.dart';
+import 'they_say_icon.dart';
 
 class InfoCarouselCardUiScrollBodyTheySay extends StatelessWidget {
   const InfoCarouselCardUiScrollBodyTheySay({Key? key}) : super(key: key);
@@ -21,37 +22,15 @@ class InfoCarouselCardUiScrollBodyTheySay extends StatelessWidget {
     List<Widget> theySay = [];
     for (int i = 0; i < theySayData.length; i++) {
       if (i > 0) {
-        theySay.add(Padding(
-            padding: EdgeInsets.symmetric(
-                vertical: SizeProvider.instance.size(8)),
-            child: const Divider(
-              color: Colors.white,
-            )));
+        theySay.add(_divider());
       }
-      theySay.add(Row(children: [
-        Padding(
-            padding:
-            EdgeInsets.only(right: SizeProvider.instance.size(16)),
-            child: SizedBox(
-                child: FittedBox(child: Icon(theySayData[i].icon, color: ColorProvider.white), fit: BoxFit.contain),
-                width: SizeProvider.instance.size(20),
-                height: SizeProvider.instance.size(20))),
-        Expanded(
-          child: Text(theySayData[i].text!,
-              style: TextStyle(
-                  fontSize: SizeProvider.instance.text(13),
-                  fontFamily: TextProvider.familyNunitoSans,
-                  package: 'tiki_style',
-                  color: Colors.white,
-                  fontWeight: FontWeight.normal)),
-        )
-      ]));
+      theySay.add(TheySayIcon(theySayData[i]));
     }
     return Container(
         color: const Color(0xFF1C0000),
         padding: EdgeInsets.symmetric(
             horizontal: SizeProvider.instance.size(15),
-            vertical: SizeProvider.instance.size(24)),
+            vertical: SizeProvider.instance.size(15)),
         child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
           Container(
               padding:
@@ -59,7 +38,7 @@ class InfoCarouselCardUiScrollBodyTheySay extends StatelessWidget {
               width: double.maxFinite,
               child: Text("What Google says it needs it for:",
                   style: TextStyle(
-                      fontSize: SizeProvider.instance.text(13),
+                      fontSize: SizeProvider.instance.text(15),
                       fontFamily: TextProvider.familyNunitoSans,
                       package: 'tiki_style',
                       color: Colors.white,
@@ -67,4 +46,12 @@ class InfoCarouselCardUiScrollBodyTheySay extends StatelessWidget {
           ...theySay
         ]));
   }
+
+  Widget _divider() => Padding(
+        padding: EdgeInsets.only(
+            top: SizeProvider.instance.size(1),
+            bottom: SizeProvider.instance.size(2)),
+        child: const Divider(
+          color: Colors.white,
+        ));
 }

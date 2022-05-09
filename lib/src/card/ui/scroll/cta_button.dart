@@ -27,6 +27,7 @@ class InfoCarouselCardUiScrollCtaButton extends StatelessWidget {
         ),
         child: Text(model.buttonText!,
             style: TextStyle(
+                fontFamily: TextProvider.familyNunitoSans,
                 fontSize: SizeProvider.instance.text(16),
                 fontWeight: FontWeight.w600)),
         onPressed: () => service.controller.openUrl(model.buttonUrl));

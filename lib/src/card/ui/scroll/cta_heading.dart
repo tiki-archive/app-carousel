@@ -15,7 +15,7 @@ class InfoCarouselCardUiScrollCtaHeading extends StatelessWidget {
       style: TextStyle(
           color: const Color(0xFF00133F),
           fontWeight: FontWeight.w800,
-          fontSize: SizeProvider.instance.text(13),
+          fontSize: SizeProvider.instance.text(15),
           fontFamily: TextProvider.familyNunitoSans,
                 package: 'tiki_style',),
     );
