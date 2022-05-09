@@ -23,22 +23,24 @@ class InfoCarouselCardUiCoverBigText extends StatelessWidget {
         textAlign: TextAlign.left,
         text: TextSpan(
             style: TextStyle(
-                color: const Color(0xFF0036B5),
-                fontFamily: "Koara",
+                color: ColorProvider.blue,
+                fontFamily: TextProvider.familyKoara,
+                package: 'tiki_style',
                 fontSize: service.controller.calculateAnimation(
-                    SizeProvider.instance.text(32),
+                    SizeProvider.instance.text(38),
                     _animationValue.value,
                     SizeProvider.instance.text(0)),
-                fontWeight: FontWeight.bold),
+                fontWeight: FontWeight.w800),
             text: model.bigTextLight!,
             children: [
               TextSpan(
                   text: model.bigTextDark!,
                   style: TextStyle(
                       color: const Color(0xFF00133F),
-                      fontFamily: "Koara",
+                      fontFamily: TextProvider.familyKoara,
+                      package: 'tiki_style',
                       fontSize: service.controller.calculateAnimation(
-                          SizeProvider.instance.text(32),
+                          SizeProvider.instance.text(38),
                           _animationValue.value,
                           SizeProvider.instance.text(0)),
                       fontWeight: FontWeight.bold))

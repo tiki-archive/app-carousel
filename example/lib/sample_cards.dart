@@ -86,7 +86,7 @@ List<InfoCarouselCardModel> sampleCards = [
               )),
           image: ImgProvider.whatWritten,
           subtitle: "Gmail knows...",
-          bigTextLight: "What you’ve written to ",
+          bigTextLight: "What you’ve written to \n",
           bigTextDark: "your friends",
           text:
           "Gmail has all emails you’ve ever written to anyone. They look at the content in the emails, so they know you better."),
