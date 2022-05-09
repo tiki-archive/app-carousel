@@ -17,18 +17,18 @@ class InfoCarouselCardUiScrollCtaButton extends StatelessWidget {
     var model = service.model.content!.cta!;
     return ElevatedButton(
         style: ElevatedButton.styleFrom(
-          fixedSize: Size.fromWidth(SizeProvider.instance.size(70 * 3.75)),
+          fixedSize: Size.fromWidth(SizeProvider.instance.size(265)),
           primary: const Color(0xFFFF521C),
           padding: EdgeInsets.symmetric(
-              vertical: SizeProvider.instance.size(1.5 * 8.12)),
+              vertical: SizeProvider.instance.size(12)),
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
-                  Radius.circular(SizeProvider.instance.size(20 * 3.75)))),
+                  Radius.circular(SizeProvider.instance.size(70)))),
         ),
         child: Text(model.buttonText!,
             style: TextStyle(
-                fontSize: SizeProvider.instance.text(13.5),
-                fontWeight: FontWeight.w800)),
+                fontSize: SizeProvider.instance.text(16),
+                fontWeight: FontWeight.w600)),
         onPressed: () => service.controller.openUrl(model.buttonUrl));
   }
 }

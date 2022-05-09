@@ -31,15 +31,15 @@ class _InfoCarouselCardLayout extends State<InfoCarouselCardLayout>
             margin: EdgeInsets.symmetric(horizontal: SizeProvider.instance.width(8)),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.all(
-                  Radius.circular(SizeProvider.instance.size(3 * 8.12))),
+                  Radius.circular(SizeProvider.instance.size(24))),
               boxShadow: [
                 BoxShadow(
                   color: const Color(0x0D000000),
-                  blurRadius: SizeProvider.instance.size(1 * 3.75),
+                  blurRadius: SizeProvider.instance.size(5),
                   offset: Offset(
                       0,
                       SizeProvider.instance
-                          .size(0.5 * 8.12)), // Shadow position
+                          .size(4)), // Shadow position
                 ),
               ],
             ),

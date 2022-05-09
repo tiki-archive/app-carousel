@@ -21,16 +21,16 @@ class InfoCarouselCardUiScrollHeader extends StatelessWidget {
     var model = service.model.cover!;
     return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
       SizedBox(
-          width: SizeProvider.instance.size(42 * 3.75),
+          width: SizeProvider.instance.size(157),
           child: RichText(
               textAlign: TextAlign.left,
               text: TextSpan(
                   style: TextStyle(
                       color: const Color(0xFF0036B5),
                       fontFamily: TextProvider.familyKoara,
+                      fontWeight: FontWeight.bold,
                 package: 'tiki_style',
-                      fontSize: SizeProvider.instance.text(18),
-                      fontWeight: FontWeight.bold),
+                      fontSize: SizeProvider.instance.text(24)),
                   text: model.bigTextLight!,
                   children: [
                     TextSpan(
@@ -43,11 +43,15 @@ class InfoCarouselCardUiScrollHeader extends StatelessWidget {
                             fontWeight: FontWeight.bold))
                   ]))),
       SizedBox(
-          child: model.image,
+          child: FittedBox(child: model.image, fit: BoxFit.contain),
+          height:  service.controller.calculateAnimation(
+          MediaQuery.of(context).size.width,
+              _animationValue.value,
+              SizeProvider.instance.size(126)),
           width: service.controller.calculateAnimation(
               MediaQuery.of(context).size.width,
               _animationValue.value,
-              SizeProvider.instance.size(18 * 8.12))),
+              SizeProvider.instance.size(126))),
     ]);
   }
 }

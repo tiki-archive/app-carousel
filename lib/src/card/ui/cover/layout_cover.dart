@@ -49,11 +49,11 @@ class InfoCarouselCardLayoutCover extends StatelessWidget {
                     child: InfoCarouselCardUiCoverSubtitle(_animationValue)),
                 Container(
                     padding: EdgeInsets.only(
-                        top: SizeProvider.instance.size(1.25 * 8.12)),
+                        top: SizeProvider.instance.size(10)),
                     child: InfoCarouselCardUiCoverBigText(_animationValue)),
                 Container(
                     padding: EdgeInsets.only(
-                        top: SizeProvider.instance.size(1.25 * 8.12)),
+                        top: SizeProvider.instance.size(10)),
                     child: InfoCarouselCardUiCoverText(_animationValue)),
                 Expanded(
                     child: Container(

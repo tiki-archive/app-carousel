@@ -23,7 +23,7 @@ class InfoCarouselCardUiScrollBodyTheySay extends StatelessWidget {
       if (i > 0) {
         theySay.add(Padding(
             padding: EdgeInsets.symmetric(
-                vertical: SizeProvider.instance.size(1 * 8.12)),
+                vertical: SizeProvider.instance.size(8)),
             child: const Divider(
               color: Colors.white,
             )));
@@ -31,10 +31,11 @@ class InfoCarouselCardUiScrollBodyTheySay extends StatelessWidget {
       theySay.add(Row(children: [
         Padding(
             padding:
-                EdgeInsets.only(right: SizeProvider.instance.size(4 * 3.75)),
+            EdgeInsets.only(right: SizeProvider.instance.size(16)),
             child: SizedBox(
-                child: Icon(theySayData[i].icon, color: ColorProvider.white),
-                width: SizeProvider.instance.size(7 * 3.75))),
+                child: FittedBox(child: Icon(theySayData[i].icon, color: ColorProvider.white), fit: BoxFit.contain),
+                width: SizeProvider.instance.size(20),
+                height: SizeProvider.instance.size(20))),
         Expanded(
           child: Text(theySayData[i].text!,
               style: TextStyle(
@@ -42,19 +43,19 @@ class InfoCarouselCardUiScrollBodyTheySay extends StatelessWidget {
                   fontFamily: TextProvider.familyNunitoSans,
                   package: 'tiki_style',
                   color: Colors.white,
-                  fontWeight: FontWeight.bold)),
+                  fontWeight: FontWeight.normal)),
         )
       ]));
     }
     return Container(
         color: const Color(0xFF1C0000),
         padding: EdgeInsets.symmetric(
-            horizontal: SizeProvider.instance.size(4 * 3.75),
-            vertical: SizeProvider.instance.size(3 * 8.12)),
+            horizontal: SizeProvider.instance.size(15),
+            vertical: SizeProvider.instance.size(24)),
         child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
           Container(
               padding:
-                  EdgeInsets.only(bottom: SizeProvider.instance.size(2 * 8.12)),
+                  EdgeInsets.only(bottom: SizeProvider.instance.size(16)),
               width: double.maxFinite,
               child: Text("What Google says it needs it for:",
                   style: TextStyle(

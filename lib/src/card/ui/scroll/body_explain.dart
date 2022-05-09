@@ -34,8 +34,9 @@ class InfoCarouselCardUiScrollBodyExplain extends StatelessWidget {
         style: TextStyle(
             color: content.url == null ? Colors.white : const Color(0xFFE89933),
             fontWeight:
-                content.url == null ? FontWeight.normal : FontWeight.w600,
-            fontSize: SizeProvider.instance.text(13),
+                content.url == null ? FontWeight.w300 : FontWeight.w600,
+            fontSize: SizeProvider.instance.text(16),
+            height: 1,
             fontFamily: TextProvider.familyNunitoSans,
                 package: 'tiki_style',),
         text: content.text,
