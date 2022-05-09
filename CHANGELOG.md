@@ -1,3 +1,7 @@
+## 0.0.5
+
+* UI cleanup
+
 ## 0.0.4
 
 * TikiStyle migration
