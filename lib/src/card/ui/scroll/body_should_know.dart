@@ -33,7 +33,7 @@ class InfoCarouselCardUiScrollBodyShouldKnow extends StatelessWidget {
             padding:
                 EdgeInsets.only(right: SizeProvider.instance.size(4 * 3.75)),
             child: SizedBox(
-                child: shouldKnowData[i].image!,
+                child: Icon(shouldKnowData[i].icon!, color: ColorProvider.white),
                 width: SizeProvider.instance.size(7 * 3.75))),
         Expanded(
           child: Text(shouldKnowData[i].text!,
@@ -51,10 +51,7 @@ class InfoCarouselCardUiScrollBodyShouldKnow extends StatelessWidget {
             horizontal: SizeProvider.instance.size(4 * 3.75),
             vertical: SizeProvider.instance.size(3 * 8.12)),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Image.asset(
-            'res/images/information.png',
-            package: 'info_carousel',
-            width: SizeProvider.instance.size(7 * 3.75),
+          Icon(IconProvider.information, color: ColorProvider.tikiRed, size: SizeProvider.instance.size(7 * 3.75),
           ),
           Container(
             margin: EdgeInsets.only(
