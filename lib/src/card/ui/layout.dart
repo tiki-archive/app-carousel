@@ -28,8 +28,7 @@ class _InfoCarouselCardLayout extends State<InfoCarouselCardLayout>
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.symmetric(horizontal: 5.0),
-        child: Container(
+            margin: EdgeInsets.symmetric(horizontal: SizeProvider.instance.width(8)),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.all(
                   Radius.circular(SizeProvider.instance.size(3 * 8.12))),
@@ -46,7 +45,7 @@ class _InfoCarouselCardLayout extends State<InfoCarouselCardLayout>
             ),
             child: ClipRRect(
                 borderRadius: BorderRadius.all(
-                    Radius.circular(SizeProvider.instance.size(3 * 8.12))),
-                child: InfoCarouselCardLayoutSwipe(_animationController))));
+                    Radius.circular(SizeProvider.instance.size(20))),
+                child: InfoCarouselCardLayoutSwipe(_animationController)));
   }
 }

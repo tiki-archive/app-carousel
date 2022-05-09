@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:tiki_style/tiki_style.dart';
 
 import '../../card/service.dart';
 import '../service.dart';
@@ -13,7 +14,8 @@ class InfoCarouselUiSlider extends StatelessWidget {
     var service = Provider.of<InfoCarouselService>(context);
     return CarouselSlider(
         options: CarouselOptions(
-            viewportFraction: 0.92, height: MediaQuery.of(context).size.height),
+            height: SizeProvider.instance.height(592),
+            viewportFraction: 0.88),
         items: service.model.cards.map((card) {
           return Builder(
               builder: (BuildContext context) => InfoCarouselCardService(

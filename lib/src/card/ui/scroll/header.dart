@@ -27,7 +27,8 @@ class InfoCarouselCardUiScrollHeader extends StatelessWidget {
               text: TextSpan(
                   style: TextStyle(
                       color: const Color(0xFF0036B5),
-                      fontFamily: "Koara",
+                      fontFamily: TextProvider.familyKoara,
+                package: 'tiki_style',
                       fontSize: SizeProvider.instance.text(18),
                       fontWeight: FontWeight.bold),
                   text: model.bigTextLight!,
@@ -36,7 +37,8 @@ class InfoCarouselCardUiScrollHeader extends StatelessWidget {
                         text: model.bigTextDark!,
                         style: TextStyle(
                             color: const Color(0xFF00133F),
-                            fontFamily: "Koara",
+                            fontFamily: TextProvider.familyKoara,
+                package: 'tiki_style',
                             fontSize: SizeProvider.instance.text(18),
                             fontWeight: FontWeight.bold))
                   ]))),

@@ -13,9 +13,11 @@ class InfoCarouselUiScreen extends StatelessWidget {
           child: SafeArea(
               child: Column(children: const [
             Padding(
-                padding: EdgeInsets.only(top: 8, bottom: 8),
+                padding: EdgeInsets.only(top: 8, bottom:6),
                 child: InfoCarouselUiClose()),
-            Expanded(child: InfoCarouselUiSlider())
+            Expanded(child: InfoCarouselUiSlider()),
+            Padding(
+              padding: EdgeInsets.only(bottom: 22)),
           ])));
     }));
   }
