@@ -24,20 +24,22 @@ class InfoCarouselCardUiCoverHeader extends StatelessWidget {
           child: Row(children: [
         SizedBox(
             width: service.controller.calculateAnimation(
-                SizeProvider.instance.size(6 * 3.75), _animationValue.value, 0),
-            child: model.image!),
+                SizeProvider.instance.width(20), _animationValue.value, 0),
+            height: service.controller.calculateAnimation(
+                SizeProvider.instance.width(20), _animationValue.value, 0),
+            child: FittedBox(fit: BoxFit.fill, child: model.image!)),
         Padding(
             padding:
-                EdgeInsets.only(right: SizeProvider.instance.size(2 * 3.75))),
+                EdgeInsets.only(right: SizeProvider.instance.size(5))),
         Text(
           model.title!,
           style: TextStyle(
               fontFamily: TextProvider.familyNunitoSans,
               package: 'tiki_style',
               fontSize: service.controller.calculateAnimation(
-                  SizeProvider.instance.text(12), _animationValue.value, 0),
-              fontWeight: FontWeight.bold,
-              color: const Color(0xFF00133F)),
+                  SizeProvider.instance.text(14), _animationValue.value, 0),
+              fontWeight: FontWeight.w800,
+              color: ColorProvider.tikiBlue),
         )
       ])),
       service.model.cover?.header?.share?.message == null
@@ -45,8 +47,8 @@ class InfoCarouselCardUiCoverHeader extends StatelessWidget {
           : GestureDetector(
               onTap: () => service.controller.shareCard(
                   context, model.share!.message!, model.share!.image!),
-              child: Icon(Icons.share,
-                  color: const Color(0xFFFF521C),
+              child: Icon(IconProvider.share,
+                  color: ColorProvider.orange,
                   size: service.controller.calculateAnimation(
                       SizeProvider.instance.text(36),
                       _animationValue.value,

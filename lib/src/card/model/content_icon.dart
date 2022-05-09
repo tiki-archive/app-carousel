@@ -6,13 +6,9 @@
 import 'package:flutter/material.dart';
 
 class InfoCarouselCardModelContentIcon {
-  Image? image;
+  IconData? icon;
   String? text;
 
-  InfoCarouselCardModelContentIcon({this.image, this.text});
+  InfoCarouselCardModelContentIcon({this.icon, this.text});
 
-  InfoCarouselCardModelContentIcon.fromDynamic(dynamic data) {
-    image = data.image;
-    text = data.text;
-  }
 }

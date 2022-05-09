@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:info_carousel/info_carousel.dart';
 
+import 'sample_cards.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -17,7 +19,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: InfoCarousel(cards: []).carouselWidget()
+      debugShowCheckedModeBanner: false,
+        home: InfoCarousel(cards: sampleCards).carouselWidget()
     );
   }
 

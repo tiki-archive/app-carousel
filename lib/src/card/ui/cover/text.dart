@@ -27,7 +27,7 @@ class InfoCarouselCardUiCoverText extends StatelessWidget {
                 color: const Color(0xFF00133F),
                 fontFamily: TextProvider.familyNunitoSans,
                 package: 'tiki_style',
-                fontSize: SizeProvider.instance.text(12),
-                fontWeight: FontWeight.w600)));
+                fontSize: SizeProvider.instance.text(14),
+                fontWeight: FontWeight.w700)));
   }
 }

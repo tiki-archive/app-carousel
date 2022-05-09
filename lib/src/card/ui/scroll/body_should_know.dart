@@ -23,7 +23,7 @@ class InfoCarouselCardUiScrollBodyShouldKnow extends StatelessWidget {
       if (i > 0) {
         shouldKnow.add(Padding(
             padding: EdgeInsets.symmetric(
-                vertical: SizeProvider.instance.size(1 * 8.12)),
+                vertical: SizeProvider.instance.size(6)),
             child: const Divider(
               color: Colors.white,
             )));
@@ -31,10 +31,10 @@ class InfoCarouselCardUiScrollBodyShouldKnow extends StatelessWidget {
       shouldKnow.add(Row(children: [
         Padding(
             padding:
-                EdgeInsets.only(right: SizeProvider.instance.size(4 * 3.75)),
+                EdgeInsets.only(right: SizeProvider.instance.size(12)),
             child: SizedBox(
-                child: shouldKnowData[i].image!,
-                width: SizeProvider.instance.size(7 * 3.75))),
+                child: Icon(shouldKnowData[i].icon!, color: ColorProvider.white),
+                width: SizeProvider.instance.size(24))),
         Expanded(
           child: Text(shouldKnowData[i].text!,
               style: TextStyle(
@@ -48,18 +48,15 @@ class InfoCarouselCardUiScrollBodyShouldKnow extends StatelessWidget {
     }
     return Container(
         margin: EdgeInsets.symmetric(
-            horizontal: SizeProvider.instance.size(4 * 3.75),
-            vertical: SizeProvider.instance.size(3 * 8.12)),
+            horizontal: SizeProvider.instance.size(15),
+            vertical: SizeProvider.instance.size(12)),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Image.asset(
-            'res/images/information.png',
-            package: 'info_carousel',
-            width: SizeProvider.instance.size(7 * 3.75),
+          Icon(IconProvider.information, color: ColorProvider.tikiRed, size: SizeProvider.instance.size(30),
           ),
           Container(
             margin: EdgeInsets.only(
-                top: SizeProvider.instance.size(2 * 8.12),
-                bottom: SizeProvider.instance.size(1 * 8.12)),
+                top: SizeProvider.instance.size(16),
+                bottom: SizeProvider.instance.size(8)),
             child: Text("You should know",
                 style: TextStyle(
                     color: Colors.white,

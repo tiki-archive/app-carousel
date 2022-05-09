@@ -37,8 +37,9 @@ class InfoCarouselCardUiScrollCtaExplain extends StatelessWidget {
                 : const Color(0xFFFF521C),
             fontWeight:
                 content.url == null ? FontWeight.normal : FontWeight.w600,
-            fontSize: SizeProvider.instance.text(13),
-            fontFamily: "NunitoSans"),
+            fontSize: SizeProvider.instance.text(15),
+            fontFamily: TextProvider.familyNunitoSans,
+                package: 'tiki_style',),
         text: content.text,
         children: [child ?? const TextSpan()]);
   }

@@ -37,9 +37,9 @@ class InfoCarouselCardLayoutCover extends StatelessWidget {
         child: Container(
             color: Colors.white,
             padding: EdgeInsets.only(
-                left: SizeProvider.instance.size(4 * 3.75),
-                top: SizeProvider.instance.size(1 * 8.12),
-                right: SizeProvider.instance.size(4 * 3.75)),
+                left: SizeProvider.instance.size(11),
+                top: SizeProvider.instance.size(14),
+                right: SizeProvider.instance.size(15)),
             child: Column(
               children: [
                 InfoCarouselCardUiCoverHeader(_animationValue),
@@ -49,11 +49,11 @@ class InfoCarouselCardLayoutCover extends StatelessWidget {
                     child: InfoCarouselCardUiCoverSubtitle(_animationValue)),
                 Container(
                     padding: EdgeInsets.only(
-                        top: SizeProvider.instance.size(1.25 * 8.12)),
+                        top: SizeProvider.instance.size(10)),
                     child: InfoCarouselCardUiCoverBigText(_animationValue)),
                 Container(
                     padding: EdgeInsets.only(
-                        top: SizeProvider.instance.size(1.25 * 8.12)),
+                        top: SizeProvider.instance.size(10)),
                     child: InfoCarouselCardUiCoverText(_animationValue)),
                 Expanded(
                     child: Container(
