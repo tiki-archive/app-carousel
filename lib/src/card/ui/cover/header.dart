@@ -24,9 +24,9 @@ class InfoCarouselCardUiCoverHeader extends StatelessWidget {
           child: Row(children: [
         SizedBox(
             width: service.controller.calculateAnimation(
-                SizeProvider.instance.width(20), _animationValue.value, 0),
+                SizeProvider.instance.width(21), _animationValue.value, 0),
             height: service.controller.calculateAnimation(
-                SizeProvider.instance.width(20), _animationValue.value, 0),
+                SizeProvider.instance.width(21), _animationValue.value, 0),
             child: FittedBox(fit: BoxFit.fill, child: model.image!)),
         Padding(
             padding:
@@ -38,7 +38,7 @@ class InfoCarouselCardUiCoverHeader extends StatelessWidget {
               package: 'tiki_style',
               fontSize: service.controller.calculateAnimation(
                   SizeProvider.instance.text(14), _animationValue.value, 0),
-              fontWeight: FontWeight.w800,
+              fontWeight: FontWeight.w700,
               color: ColorProvider.tikiBlue),
         )
       ])),

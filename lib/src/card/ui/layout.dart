@@ -30,8 +30,6 @@ class _InfoCarouselCardLayout extends State<InfoCarouselCardLayout>
     return Container(
             margin: EdgeInsets.symmetric(horizontal: SizeProvider.instance.width(8)),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(
-                  Radius.circular(SizeProvider.instance.size(24))),
               boxShadow: [
                 BoxShadow(
                   color: const Color(0x0D000000),
@@ -45,7 +43,7 @@ class _InfoCarouselCardLayout extends State<InfoCarouselCardLayout>
             ),
             child: ClipRRect(
                 borderRadius: BorderRadius.all(
-                    Radius.circular(SizeProvider.instance.size(20))),
+                    Radius.circular(SizeProvider.instance.size(21))),
                 child: InfoCarouselCardLayoutSwipe(_animationController)));
   }
 }

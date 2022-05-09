@@ -51,7 +51,7 @@ class InfoCarouselCardUiScrollHeader extends StatelessWidget {
           width: service.controller.calculateAnimation(
               MediaQuery.of(context).size.width,
               _animationValue.value,
-              SizeProvider.instance.size(126))),
+              SizeProvider.instance.size(123))),
     ]);
   }
 }

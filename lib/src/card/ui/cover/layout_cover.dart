@@ -37,32 +37,37 @@ class InfoCarouselCardLayoutCover extends StatelessWidget {
         child: Container(
             color: Colors.white,
             padding: EdgeInsets.only(
+                top: SizeProvider.instance.size(16),
                 left: SizeProvider.instance.size(11),
-                top: SizeProvider.instance.size(14),
                 right: SizeProvider.instance.size(15)),
             child: Column(
               children: [
                 InfoCarouselCardUiCoverHeader(_animationValue),
-                InfoCarouselCardUiCoverImage(_animationValue),
-                Align(
+                Padding(
+                  padding: EdgeInsets.only(left: SizeProvider.instance.size(10), top: SizeProvider.instance.size(10)),
+                  child: InfoCarouselCardUiCoverImage(_animationValue),
+                ),
+                Container(
+                    padding: EdgeInsets.only(left:SizeProvider.instance.size(8)),
                     alignment: Alignment.topLeft,
                     child: InfoCarouselCardUiCoverSubtitle(_animationValue)),
                 Container(
-                    padding: EdgeInsets.only(
-                        top: SizeProvider.instance.size(10)),
+                    padding: EdgeInsets.only(left:SizeProvider.instance.size(8), top:SizeProvider.instance.size(8)),
                     child: InfoCarouselCardUiCoverBigText(_animationValue)),
-                Container(
+                Padding(
                     padding: EdgeInsets.only(
-                        top: SizeProvider.instance.size(10)),
+                        right: SizeProvider.instance.size(10),
+                        top: SizeProvider.instance.size(12),
+                        left: SizeProvider.instance.size(10)),
                     child: InfoCarouselCardUiCoverText(_animationValue)),
                 Expanded(
                     child: Container(
                         alignment: Alignment.bottomCenter,
                         padding: EdgeInsets.only(
-                            bottom: SizeProvider.instance.size(4 * 8.12)),
+                            bottom: SizeProvider.instance.size(32)),
                         child: InfoCarouselCardUiCoverArrow(
                             _animationController, _animationValue)))
-              ],
-            )));
+              ]),
+            ));
   }
 }

@@ -15,7 +15,7 @@ class InfoCarouselUiSlider extends StatelessWidget {
     return CarouselSlider(
         options: CarouselOptions(
             height: SizeProvider.instance.height(592),
-            viewportFraction: 0.88),
+            viewportFraction: 0.87),
         items: service.model.cards.map((card) {
           return Builder(
               builder: (BuildContext context) => InfoCarouselCardService(
