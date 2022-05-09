@@ -19,7 +19,7 @@ class InfoCarouselCardUiCoverImage extends StatelessWidget {
     var service = Provider.of<InfoCarouselCardService>(context);
     var model = service.model.cover!.image!;
     return SizedBox(
-        child: FittedBox(child: model, fit:BoxFit.contain),
+        child: FittedBox(child: model, fit: BoxFit.contain),
         width: double.infinity,
         height: service.controller.calculateAnimation(
             SizeProvider.instance.size(242),

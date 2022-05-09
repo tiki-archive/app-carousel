@@ -33,8 +33,7 @@ class InfoCarouselCardUiScrollBodyTheySay extends StatelessWidget {
             vertical: SizeProvider.instance.size(15)),
         child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
           Container(
-              padding:
-                  EdgeInsets.only(bottom: SizeProvider.instance.size(16)),
+              padding: EdgeInsets.only(bottom: SizeProvider.instance.size(16)),
               width: double.maxFinite,
               child: Text("What Google says it needs it for:",
                   style: TextStyle(
@@ -48,10 +47,10 @@ class InfoCarouselCardUiScrollBodyTheySay extends StatelessWidget {
   }
 
   Widget _divider() => Padding(
-        padding: EdgeInsets.only(
-            top: SizeProvider.instance.size(1),
-            bottom: SizeProvider.instance.size(2)),
-        child: const Divider(
-          color: Colors.white,
-        ));
+      padding: EdgeInsets.only(
+          top: SizeProvider.instance.size(1),
+          bottom: SizeProvider.instance.size(2)),
+      child: const Divider(
+        color: Colors.white,
+      ));
 }

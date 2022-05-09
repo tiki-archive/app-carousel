@@ -6,7 +6,7 @@
 import 'content.dart';
 import 'cover.dart';
 
-class InfoCarouselCardModel {
+class CardModel {
   InfoCarouselCardModelCover? cover;
   InfoCarouselCardModelContent? content;
 

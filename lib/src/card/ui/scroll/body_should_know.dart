@@ -29,19 +29,22 @@ class InfoCarouselCardUiScrollBodyShouldKnow extends StatelessWidget {
     }
     return Container(
         margin: EdgeInsets.only(
-            left: SizeProvider.instance.size(20),
-            right: SizeProvider.instance.size(15),
-            top: SizeProvider.instance.size(20),
+          left: SizeProvider.instance.size(20),
+          right: SizeProvider.instance.size(15),
+          top: SizeProvider.instance.size(20),
           bottom: SizeProvider.instance.size(30),
         ),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Icon(IconProvider.information, color: ColorProvider.tikiRed, size: SizeProvider.instance.size(30),
+          Icon(
+            IconProvider.information,
+            color: ColorProvider.tikiRed,
+            size: SizeProvider.instance.size(30),
           ),
           Container(
             margin: EdgeInsets.only(
-                top: SizeProvider.instance.size(16),
-                bottom: SizeProvider.instance.size(8),
-                ),
+              top: SizeProvider.instance.size(16),
+              bottom: SizeProvider.instance.size(8),
+            ),
             child: Text("You should know",
                 style: TextStyle(
                     color: Colors.white,

@@ -1,4 +1,4 @@
-import 'service.dart';
+import 'screen_service.dart';
 import 'package:provider/provider.dart';
 
 import 'ui/screen.dart';

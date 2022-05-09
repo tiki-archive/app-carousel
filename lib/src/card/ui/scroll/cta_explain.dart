@@ -32,14 +32,14 @@ class InfoCarouselCardUiScrollCtaExplain extends StatelessWidget {
         recognizer: TapGestureRecognizer()
           ..onTap = () => service.controller.openUrl(content.url),
         style: TextStyle(
-            color: content.url == null
-                ? const Color(0xFF00133F)
-                : const Color(0xFFFF521C),
-            fontWeight:
-                content.url == null ? FontWeight.w600 : FontWeight.w800,
-            fontSize: SizeProvider.instance.text(15),
-            fontFamily: TextProvider.familyNunitoSans,
-                package: 'tiki_style',),
+          color: content.url == null
+              ? const Color(0xFF00133F)
+              : const Color(0xFFFF521C),
+          fontWeight: content.url == null ? FontWeight.w600 : FontWeight.w800,
+          fontSize: SizeProvider.instance.text(15),
+          fontFamily: TextProvider.familyNunitoSans,
+          package: 'tiki_style',
+        ),
         text: content.text,
         children: [child ?? const TextSpan()]);
   }

@@ -19,8 +19,8 @@ class InfoCarouselCardUiScrollCtaButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           fixedSize: Size.fromWidth(SizeProvider.instance.size(265)),
           primary: const Color(0xFFFF521C),
-          padding: EdgeInsets.symmetric(
-              vertical: SizeProvider.instance.size(12)),
+          padding:
+              EdgeInsets.symmetric(vertical: SizeProvider.instance.size(12)),
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
                   Radius.circular(SizeProvider.instance.size(70)))),

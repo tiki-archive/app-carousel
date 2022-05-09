@@ -29,7 +29,7 @@ class InfoCarouselCardUiScrollHeader extends StatelessWidget {
                       color: const Color(0xFF0036B5),
                       fontFamily: TextProvider.familyKoara,
                       fontWeight: FontWeight.bold,
-                package: 'tiki_style',
+                      package: 'tiki_style',
                       fontSize: SizeProvider.instance.text(24)),
                   text: model.bigTextLight!,
                   children: [
@@ -38,14 +38,14 @@ class InfoCarouselCardUiScrollHeader extends StatelessWidget {
                         style: TextStyle(
                             color: const Color(0xFF00133F),
                             fontFamily: TextProvider.familyKoara,
-                package: 'tiki_style',
+                            package: 'tiki_style',
                             fontSize: SizeProvider.instance.text(18),
                             fontWeight: FontWeight.bold))
                   ]))),
       SizedBox(
           child: FittedBox(child: model.image, fit: BoxFit.contain),
-          height:  service.controller.calculateAnimation(
-          MediaQuery.of(context).size.width,
+          height: service.controller.calculateAnimation(
+              MediaQuery.of(context).size.width,
               _animationValue.value,
               SizeProvider.instance.size(126)),
           width: service.controller.calculateAnimation(

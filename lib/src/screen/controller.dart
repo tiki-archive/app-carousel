@@ -1,4 +1,4 @@
-import 'service.dart';
+import 'screen_service.dart';
 
 class InfoCarouselController {
   final InfoCarouselService service;
