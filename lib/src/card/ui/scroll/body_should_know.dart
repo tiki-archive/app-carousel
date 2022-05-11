@@ -46,11 +46,11 @@ class InfoCarouselCardUiScrollBodyShouldKnow extends StatelessWidget {
             ),
             child: Text("You should know",
                 style: TextStyle(
-                    color: Colors.white,
+                    color: ColorProvider.white,
                     fontFamily: TextProvider.familyNunitoSans,
                     package: 'tiki_style',
                     fontWeight: FontWeight.w800,
-                    fontSize: SizeProvider.instance.text(14))),
+                    fontSize: SizeProvider.instance.text(15))),
           ),
           ...shouldKnow
         ]));
@@ -61,6 +61,6 @@ class InfoCarouselCardUiScrollBodyShouldKnow extends StatelessWidget {
           top: SizeProvider.instance.size(5),
           bottom: SizeProvider.instance.size(8)),
       child: const Divider(
-        color: Colors.white,
+        color: ColorProvider.white,
       ));
 }

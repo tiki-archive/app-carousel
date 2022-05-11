@@ -32,7 +32,7 @@ class InfoCarouselCardUiScrollBodyExplain extends StatelessWidget {
         recognizer: TapGestureRecognizer()
           ..onTap = () => service.controller.openUrl(content.url),
         style: TextStyle(
-          color: content.url == null ? Colors.white : const Color(0xFFE89933),
+          color: content.url == null ? ColorProvider.white : const Color(0xFFE89933),
           fontWeight: content.url == null ? FontWeight.w400 : FontWeight.w600,
           fontSize: SizeProvider.instance.text(15),
           height: 1.2,

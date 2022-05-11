@@ -41,10 +41,10 @@ class CardViewLayoutScroll extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                      color: Colors.white,
+                      color: ColorProvider.white,
                       padding: EdgeInsets.only(
                           left: SizeProvider.instance.size(15),
-                          top: SizeProvider.instance.size(8),
+                          top: SizeProvider.instance.size(10),
                           right: SizeProvider.instance.size(15),
                           bottom: SizeProvider.instance.size(15)),
                       child: InfoCarouselCardUiScrollHeader(_animationValue)),
@@ -75,7 +75,7 @@ class CardViewLayoutScroll extends StatelessWidget {
                             child: const InfoCarouselCardUiScrollCtaHeading()),
                         Container(
                             padding: EdgeInsets.only(
-                                top: SizeProvider.instance.size(8),
+                                top: SizeProvider.instance.size(12),
                                 right: SizeProvider.instance.size(10)),
                             child: const InfoCarouselCardUiScrollCtaExplain()),
                         Container(

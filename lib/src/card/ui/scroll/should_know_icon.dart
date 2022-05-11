@@ -22,12 +22,12 @@ class ShouldKnowIcon extends StatelessWidget {
       Expanded(
         child: Text(_data.text!,
             style: TextStyle(
-                fontSize: SizeProvider.instance.text(13),
+                fontSize: SizeProvider.instance.text(14),
                 fontFamily: TextProvider.familyNunitoSans,
                 package: 'tiki_style',
                 height: 1.2,
                 color: ColorProvider.white,
-                fontWeight: FontWeight.w700)),
+                fontWeight: FontWeight.w600)),
       )
     ]);
   }

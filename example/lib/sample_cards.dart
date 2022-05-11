@@ -33,7 +33,7 @@ List<InfoCarouselCardModel> sampleCards = [
               ],
               theySay: <InfoCarouselCardModelContentIcon>[
                 InfoCarouselCardModelContentIcon(
-                    icon: IconProvider.badge,
+                    icon: IconProvider.att_badge,
                     text: "Security monitoring to suspicious access"),
                 InfoCarouselCardModelContentIcon(
                     icon: IconProvider.magnify_chart,
@@ -93,7 +93,7 @@ List<InfoCarouselCardModel> sampleCards = [
           body: InfoCarouselCardModelContentBody(explain: [
             InfoCarouselCardModelContentText(
                 text:
-                "Gmail has access to your emails - it reads, stores and analyzes them.\n\nGoogle uses this information for targeted ads and what they call “smart features” like automatically adding your flight information to your calendar.\n\nIn their own words:\n\n\nCreepy.",
+                "Gmail has access to your emails - it reads, stores and analyzes them.\n\nGoogle uses this information for targeted ads and what they call “smart features” like automatically adding your flight information to your calendar.\n\nIn their own words:\n”Google places advertising on Gmail based on key words that appear in messages transmitted through our system (it's a good example of ads helping to pay for the free services we all enjoy online) - so if you're emailing a friend about a trip to Paris, for example, ads might appear on the right hand side of the page for trains to France...”\n\nCreepy.",
                 url: null)
           ], theySay: [
             InfoCarouselCardModelContentIcon(

@@ -21,9 +21,9 @@ class TheySayIcon extends StatelessWidget {
                 fontSize: SizeProvider.instance.text(14),
                 fontFamily: TextProvider.familyNunitoSans,
                 package: 'tiki_style',
-                height: 1.1,
+                height: 1.2,
                 color: ColorProvider.white,
-                fontWeight: FontWeight.w800)),
+                fontWeight: FontWeight.w600)),
       )
     ]);
   }

@@ -35,7 +35,7 @@ class InfoCarouselCardLayoutCover extends StatelessWidget {
         onVerticalDragEnd: (endDetails) => service.controller
             .onVerticalDragEndCover(endDetails, _animationController),
         child: Container(
-          color: Colors.white,
+          color: ColorProvider.white,
           padding: EdgeInsets.only(
               top: SizeProvider.instance.size(16),
               left: SizeProvider.instance.size(11),
