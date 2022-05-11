@@ -1,6 +1,7 @@
 ## 0.0.5
 
-* UI cleanup
+* Review sizings and designs
+* Tiki Style 0.0.18
 
 ## 0.0.4
 
