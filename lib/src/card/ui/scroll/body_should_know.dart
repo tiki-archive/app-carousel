@@ -10,7 +10,6 @@ import 'package:tiki_style/tiki_style.dart';
 import '../../model/content_icon.dart';
 import '../../service.dart';
 import 'should_know_icon.dart';
-import 'they_say_icon.dart';
 
 class InfoCarouselCardUiScrollBodyShouldKnow extends StatelessWidget {
   const InfoCarouselCardUiScrollBodyShouldKnow({Key? key}) : super(key: key);

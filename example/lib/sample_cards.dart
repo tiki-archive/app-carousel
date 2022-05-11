@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:info_carousel/info_carousel.dart';
 import 'package:tiki_style/tiki_style.dart';
 

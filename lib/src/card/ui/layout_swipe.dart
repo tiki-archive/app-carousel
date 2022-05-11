@@ -20,6 +20,6 @@ class CardViewLayoutSwipe extends AnimatedWidget {
   Widget build(BuildContext context) {
     return _animationValue.value < 1.0
         ? InfoCarouselCardLayoutCover(_animationValue, _animationController)
-        : InfoCarouselCardLayoutScroll(_animationValue, _animationController);
+        : CardViewLayoutScroll(_animationValue, _animationController);
   }
 }

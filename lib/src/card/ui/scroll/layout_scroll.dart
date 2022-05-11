@@ -17,7 +17,7 @@ import 'cta_explain.dart';
 import 'cta_heading.dart';
 import 'header.dart';
 
-class InfoCarouselCardLayoutScroll extends StatelessWidget {
+class CardViewLayoutScroll extends StatelessWidget {
   final Animation<double> _animationValue;
   final AnimationController _animationController;
 

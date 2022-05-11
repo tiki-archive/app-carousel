@@ -4,12 +4,12 @@ import 'controller.dart';
 import 'model.dart';
 import 'presenter.dart';
 
-class ScreenService extends ChangeNotifier {
+class InfoCarouselService extends ChangeNotifier {
   late final InfoCarouselPresenter presenter;
   late final InfoCarouselModel model;
   late final InfoCarouselController controller;
 
-  ScreenService({required List<InfoCarouselCardModel> cards}) {
+  InfoCarouselService({required List<InfoCarouselCardModel> cards}) {
     presenter = InfoCarouselPresenter(this);
     model = InfoCarouselModel();
     controller = InfoCarouselController(this);

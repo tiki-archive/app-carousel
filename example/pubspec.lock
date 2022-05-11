@@ -391,7 +391,7 @@ packages:
       path: "../../style"
       relative: true
     source: path
-    version: "0.0.17"
+    version: "0.0.18"
   typed_data:
     dependency: transitive
     description:

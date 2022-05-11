@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'src/card/model/model.dart';
 
-import 'src/container/screen_service.dart';
+import 'src/container/service.dart';
 
 export 'src/card/model/model.dart';
 export 'src/card/model/content.dart';

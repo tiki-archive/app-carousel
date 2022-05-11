@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:tiki_style/tiki_style.dart';
 
 import '../../card/service.dart';
-import '../screen_service.dart';
+import '../service.dart';
 
 class InfoCarouselUiSlider extends StatelessWidget {
   const InfoCarouselUiSlider({Key? key}) : super(key: key);

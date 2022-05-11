@@ -12,7 +12,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:share_plus/share_plus.dart';
 import '../../info_carousel.dart';
-import '../container/screen_service.dart';
+import '../container/service.dart';
 import 'controller.dart';
 import 'presenter.dart';
 
