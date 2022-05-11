@@ -30,28 +30,27 @@ class InfoCarouselCardUiScrollBodyTheySay extends StatelessWidget {
         color: const Color(0xFF1C0000),
         padding: EdgeInsets.symmetric(
             horizontal: SizeProvider.instance.size(15),
-            vertical: SizeProvider.instance.size(15)),
+            vertical: SizeProvider.instance.size(16)),
         child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
           Container(
-              padding:
-                  EdgeInsets.only(bottom: SizeProvider.instance.size(16)),
+              padding: EdgeInsets.only(bottom: SizeProvider.instance.size(16)),
               width: double.maxFinite,
               child: Text("What Google says it needs it for:",
                   style: TextStyle(
-                      fontSize: SizeProvider.instance.text(15),
+                      fontSize: SizeProvider.instance.text(16),
                       fontFamily: TextProvider.familyNunitoSans,
                       package: 'tiki_style',
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800))),
+                      color: ColorProvider.white,
+                      fontWeight: FontWeight.w700))),
           ...theySay
         ]));
   }
 
   Widget _divider() => Padding(
-        padding: EdgeInsets.only(
-            top: SizeProvider.instance.size(1),
-            bottom: SizeProvider.instance.size(2)),
-        child: const Divider(
-          color: Colors.white,
-        ));
+      padding: EdgeInsets.only(
+          top: SizeProvider.instance.size(3),
+          bottom: SizeProvider.instance.size(3)),
+      child: const Divider(
+        color: ColorProvider.white,
+      ));
 }

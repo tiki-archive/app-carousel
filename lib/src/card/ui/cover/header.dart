@@ -28,9 +28,7 @@ class InfoCarouselCardUiCoverHeader extends StatelessWidget {
             height: service.controller.calculateAnimation(
                 SizeProvider.instance.width(21), _animationValue.value, 0),
             child: FittedBox(fit: BoxFit.fill, child: model.image!)),
-        Padding(
-            padding:
-                EdgeInsets.only(right: SizeProvider.instance.size(5))),
+        Padding(padding: EdgeInsets.only(right: SizeProvider.instance.size(5))),
         Text(
           model.title!,
           style: TextStyle(

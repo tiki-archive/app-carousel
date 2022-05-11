@@ -32,11 +32,11 @@ class InfoCarouselCardUiCoverArrow extends StatelessWidget {
                 ? 1 - (_animationValue.value * 2)
                 : 0,
             child: SizedBox(
-              width: double.infinity,
-              child: Icon(
-              IconProvider.arrow_wide_up,
-              color: ColorProvider.greyThree,
-                size: SizeProvider.instance.size(12),
-            ))));
+                width: double.infinity,
+                child: Icon(
+                  IconProvider.arrow_wide_up,
+                  color: ColorProvider.greyThree,
+                  size: SizeProvider.instance.size(12),
+                ))));
   }
 }

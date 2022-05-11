@@ -10,7 +10,6 @@ import 'package:tiki_style/tiki_style.dart';
 import '../../model/content_icon.dart';
 import '../../service.dart';
 import 'should_know_icon.dart';
-import 'they_say_icon.dart';
 
 class InfoCarouselCardUiScrollBodyShouldKnow extends StatelessWidget {
   const InfoCarouselCardUiScrollBodyShouldKnow({Key? key}) : super(key: key);
@@ -29,26 +28,29 @@ class InfoCarouselCardUiScrollBodyShouldKnow extends StatelessWidget {
     }
     return Container(
         margin: EdgeInsets.only(
-            left: SizeProvider.instance.size(20),
-            right: SizeProvider.instance.size(15),
-            top: SizeProvider.instance.size(20),
+          left: SizeProvider.instance.size(20),
+          right: SizeProvider.instance.size(15),
+          top: SizeProvider.instance.size(20),
           bottom: SizeProvider.instance.size(30),
         ),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Icon(IconProvider.information, color: ColorProvider.tikiRed, size: SizeProvider.instance.size(30),
+          Icon(
+            IconProvider.information,
+            color: ColorProvider.tikiRed,
+            size: SizeProvider.instance.size(30),
           ),
           Container(
             margin: EdgeInsets.only(
-                top: SizeProvider.instance.size(16),
-                bottom: SizeProvider.instance.size(8),
-                ),
+              top: SizeProvider.instance.size(16),
+              bottom: SizeProvider.instance.size(8),
+            ),
             child: Text("You should know",
                 style: TextStyle(
-                    color: Colors.white,
+                    color: ColorProvider.white,
                     fontFamily: TextProvider.familyNunitoSans,
                     package: 'tiki_style',
                     fontWeight: FontWeight.w800,
-                    fontSize: SizeProvider.instance.text(14))),
+                    fontSize: SizeProvider.instance.text(15))),
           ),
           ...shouldKnow
         ]));
@@ -59,6 +61,6 @@ class InfoCarouselCardUiScrollBodyShouldKnow extends StatelessWidget {
           top: SizeProvider.instance.size(5),
           bottom: SizeProvider.instance.size(8)),
       child: const Divider(
-        color: Colors.white,
+        color: ColorProvider.white,
       ));
 }

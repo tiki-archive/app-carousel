@@ -8,10 +8,10 @@ import 'package:flutter/material.dart';
 import 'cover/layout_cover.dart';
 import 'scroll/layout_scroll.dart';
 
-class InfoCarouselCardLayoutSwipe extends AnimatedWidget {
+class CardViewLayoutSwipe extends AnimatedWidget {
   final AnimationController _animationController;
 
-  const InfoCarouselCardLayoutSwipe(this._animationController, {Key? key})
+  const CardViewLayoutSwipe(this._animationController, {Key? key})
       : super(key: key, listenable: _animationController);
 
   Animation<double> get _animationValue => listenable as Animation<double>;
@@ -20,6 +20,6 @@ class InfoCarouselCardLayoutSwipe extends AnimatedWidget {
   Widget build(BuildContext context) {
     return _animationValue.value < 1.0
         ? InfoCarouselCardLayoutCover(_animationValue, _animationController)
-        : InfoCarouselCardLayoutScroll(_animationValue, _animationController);
+        : CardViewLayoutScroll(_animationValue, _animationController);
   }
 }

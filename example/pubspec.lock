@@ -190,7 +190,7 @@ packages:
       name: path_provider
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.9"
+    version: "2.0.10"
   path_provider_android:
     dependency: transitive
     description:
@@ -391,7 +391,7 @@ packages:
       path: "../../style"
       relative: true
     source: path
-    version: "0.0.17"
+    version: "0.0.18"
   typed_data:
     dependency: transitive
     description:
@@ -405,7 +405,7 @@ packages:
       name: url_launcher
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "6.1.0"
+    version: "6.1.1"
   url_launcher_android:
     dependency: transitive
     description:
