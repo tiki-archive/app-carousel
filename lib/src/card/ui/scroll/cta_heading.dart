@@ -13,11 +13,12 @@ class InfoCarouselCardUiScrollCtaHeading extends StatelessWidget {
     return Text(
       "What can you do about it?",
       style: TextStyle(
-          color: const Color(0xFF00133F),
-          fontWeight: FontWeight.w800,
-          fontSize: SizeProvider.instance.text(13),
-          fontFamily: TextProvider.familyNunitoSans,
-                package: 'tiki_style',),
+        color: const Color(0xFF00133F),
+        fontWeight: FontWeight.w800,
+        fontSize: SizeProvider.instance.text(15),
+        fontFamily: TextProvider.familyNunitoSans,
+        package: 'tiki_style',
+      ),
     );
   }
 }

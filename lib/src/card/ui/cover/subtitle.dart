@@ -24,10 +24,11 @@ class InfoCarouselCardUiCoverSubtitle extends StatelessWidget {
             : 0,
         child: Text(service.model.cover!.subtitle!,
             style: TextStyle(
-                color: ColorProvider.orange,
-                fontSize: SizeProvider.instance.text(16),
-                fontWeight: FontWeight.w800,
-                fontFamily: TextProvider.familyNunitoSans,
-                package: 'tiki_style',)));
+              color: ColorProvider.orange,
+              fontSize: SizeProvider.instance.text(16),
+              fontWeight: FontWeight.w800,
+              fontFamily: TextProvider.familyNunitoSans,
+              package: 'tiki_style',
+            )));
   }
 }
