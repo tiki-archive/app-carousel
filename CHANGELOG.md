@@ -1,3 +1,7 @@
+## 0.0.7
+
+* update dependencies
+
 ## 0.0.6
 
 * fix UI errors
